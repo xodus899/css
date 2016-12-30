@@ -24,12 +24,22 @@ a {
 	color: black;
 }
 /*add styles here*/
+a[title*="visit"]{
+	color:red;
+}
+a:hover {
+	color:blue;
+}
+p[class~="red"]{
+	color:red;
+}
+
 </style>
 </head>
 <body>
 <ul>
   <li><a href="http://www.lynda.com" title="visit lynda.com">This is an external link</a></li>
-  <li><a href="about.htm" title="visit about us">This is an local link</a></li>
+  <li><a href="about.htm" title="please visit about us">This is an local link</a></li>
   <li><a href="_docs/plan.pdf" title="download our annual report">This is a link to a resource</a></li>
 </ul>
 <p class="red blue green">This paragraph has the classes red, blue, and green. </p>
