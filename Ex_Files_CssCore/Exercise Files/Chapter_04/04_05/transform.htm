@@ -18,6 +18,7 @@ body {
 /*add styles here*/
 h1 {
 	font-size: 1.6em;
+	text-transform: capitalize;
 }
 h2 {
 	font-size: 1.4em;
@@ -25,12 +26,20 @@ h2 {
 p {
 	font-size: 1em;
 }
+
+.upper {
+	text-transform: uppercase;
+}
+
+.lower {
+	text-transform: lowercase;
+}
 </style>
 </head>
 <body>
 <article>
 <h1>transforming text.</h1>
-<p>Using the text-transform property, you can control which case is used for the characters within an element. For example, I want this to be all uppercase. THIS, on the other hand, should be lowercase.</p>
+<p>Using the text-transform property, you can control which case is used for the characters within an element. For example, <span class="upper">I want this to be all uppercase.</span> <span class="lower">THIS</span>, on the other hand, should be lowercase.</p>
 </article>
 </body>
 </html>
