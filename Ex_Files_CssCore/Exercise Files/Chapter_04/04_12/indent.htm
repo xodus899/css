@@ -11,7 +11,7 @@ aside, article, section, header, footer, nav {
 	display: block;
 }
 html {
-	background-color: white;
+	background-color: grey;
 }
 body {
 	width: 40%;
@@ -30,6 +30,19 @@ p {
 	font-size: 1em;
 }
 /*add styles here*/
+p {
+	text-indent: 1em;	
+
+}
+
+.quote {
+	text-indent: -.5em
+}
+
+h2{
+	text-indent: -2000em;
+	background: yellow;
+}
 
 </style>
 </head>
@@ -38,7 +51,7 @@ p {
 <h1>Text indenting</h1>
 <p>CSS allows you to control the indenting of text through the text-indent property. This will indent the first line of text in any element that it is applied to. You can also apply negative values to the property as well.</p>
 <p>Negative values can often help you create what is known as hanging punctuation. For example, check out the following quote:</p>
-<p>&#8220;Far better is it to dare mighty things, to win  glorious triumphs, even though checkered by failure... than to rank with  those poor spirits who neither enjoy nor suffer much, because they live  in a gray twilight that knows not victory nor defeat.&#8221;<br>-Theodore Roosevelt</p>
+<p class="quote">&#8220;Far better is it to dare mighty things, to win  glorious triumphs, even though checkered by failure... than to rank with  those poor spirits who neither enjoy nor suffer much, because they live  in a gray twilight that knows not victory nor defeat.&#8221;<br>-Theodore Roosevelt</p>
 <p>You could use negative text-indent values for the quote to move the punctuation outside the container box. You can also use negative text-indent values to hide certain elements. This is useful when you need text content for screen readers or other devices, but don't want the text to be visible. Let's try it:</p>
 <h2>Hide me please.</h2>
 </article>

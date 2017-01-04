@@ -12,9 +12,8 @@ aside, article, section, header, footer, nav {
 }
 body {
 	width: 600px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 100%;
-	line-height: 1.5;
+  /*SHORT HAND FOR FONT... FONT-WEIGHT/STYLE/VARIANT,THEN SIZE, LINE-HEIGHT, THEN FONT FAMILY. */
+	font: normal normal normal 100%/1.5  Georgia, "Times New Roman", Times, serif;	
 }
 h1 {
 	font-size: 1.8em;
@@ -26,6 +25,13 @@ p {
 	font-size: 1em;
 }
 /*add styles here*/
+.shorthand {
+  font: bold small-caps 1.2em Arial, Helvetica, sans-serif;
+}
+
+.keyword {
+  font:caption;
+}
 
 </style>
 </head>
@@ -42,7 +48,7 @@ p {
   <li>font-family</li>
 </ul>
 <p>While we don't have to explicitly set each one, we are required to define font-family and font-size each time we use it. If we fail to set a value for any of the remaining font properties, the default value is assigned. This can actually cause other values to be overwritten if care is not taken when writing the syntax.</p>
-<h2>For example, for headings the default font-weight is bold.</h2>
+<h2 class="shorthand">For example, for headings the default font-weight is bold.</h2>
 <h2>Optional keywords.</h2>
 <p>You an also use a set of optional keywords which instructs the user agent to use the font formatting used by those system fonts. This is especially useful when creating applications or UI widgets:</p>
 <ul class="keyword">

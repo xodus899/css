@@ -39,6 +39,54 @@ attribution would be nice, but not required
 /*Global styles -----------------------------------------------------------------------------------------------------------*/
 /*Paste @font-face rules here */
 
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Regular-webfont.eot');
+	src: url('../_fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Regular-webfont.woff') format('woff'), url('../_fonts/Cantarell-Regular-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Regular-webfont.svg#webfont9UOzsjXz') format('svg');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot');
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Oblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-Oblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Oblique-webfont.svg#webfontRl4nowrT') format('svg');
+	font-weight: normal;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Bold-webfont.eot');
+	src: url('../_fonts/Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Bold-webfont.woff') format('woff'), url('../_fonts/Cantarell-Bold-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Bold-webfont.svg#webfontKr2CkGZp') format('svg');
+	font-weight: bold;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot');
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-BoldOblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-BoldOblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-BoldOblique-webfont.svg#webfontQ1aSR0ux') format('svg');
+	font-weight: bold;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url("../_fonts/Cardo99s-webfont.eot");
+	src: url("../_fonts/Cardo99s-webfont.eot?#iefix") format("embedded-opentype"), url("../_fonts/Cardo99s-webfont.woff") format("woff"), url("../_fonts/Cardo99s-webfont.ttf") format("truetype"), url("../_fonts/Cardo99s-webfont.svg#webfontQ5EXXZTZ") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OstrichSansBold';
+	src: url('../_fonts/ostrich-bold-webfont.eot');
+	src: url('../_fonts/ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/ostrich-bold-webfont.woff') format('woff'), url('../_fonts/ostrich-bold-webfont.ttf') format('truetype'), url('../_fonts/ostrich-bold-webfont.svg#OstrichSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /*limited reset*/
 html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
 	margin: 0;
@@ -53,6 +101,16 @@ address, article, aside, canvas, details, figcaption, figure, footer, header, hg
 	display: block;
 }
 /*place basic link styles here*/
+/*set the color of the links to Burnt Orange (see above), and set the hover color to Pewter Blue.
+*/
+a {
+	text-decoration: none;
+	color: rgb(219,126,64);
+}
+
+a:hover {
+	color: rgb(123,121,143);
+}
 
 
 .preview a {
@@ -75,14 +133,23 @@ a.phone:hover {
 	cursor: default;
 }
 
+
 html {
 	background: rgb(123, 121, 143);
 }
 
 body {
 	position: relative;
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: Cantarell, Arial, Helevetica, sans-serif;	
 	background: #fff;
+	color: rgb(76,67,65);
+	font-weight:normal;
+	font-style:normal;
+	
 }
+
 
 #mainNav h2 {
 	display: none;
@@ -90,6 +157,14 @@ body {
 
 nav ul {
 	list-style: none;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-style: bold;
 }
 
 /*Basic layout styles -----------------------------------------------------------------------------------------------------------*/
@@ -123,6 +198,7 @@ aside {
 
 /* Content region styles -----------------------------------------------------------------------------------------------------------*/
 
+
 /*header styles*/
 header {
 	background: rgb(100, 98, 102);
@@ -133,14 +209,26 @@ header {
 }
 
 header h1 {
+	font-size: 3.2em;
+	font-weight: bold;
 	margin-right: .5em;
 	float: left;
 	padding-left: 110px;
 	background: url(../_images/desolve_logo.png) no-repeat left center;
+	text-transform: uppercase;
+	line-height: 165px;
+	color:white;
 }
 
 header h2 {
 	float: left;
+	font-size: 1.4em;
+	font-weight: normal;
+	font-style: italic;
+	text-transform:  lowercase;
+	line-height: 165px;
+	color:white;
+	letter-spacing: .1em;
 }
 header a, header a:hover {
 	color: #fff;
@@ -159,11 +247,14 @@ header a, header a:hover {
 	margin-right: 3.6em;
 }
 
+
 #mainNav a {
 	display: block;
 	color: rgb(76, 67, 65);
 	border: none;
 	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 #mainNav a:hover {
@@ -179,6 +270,7 @@ header a, header a:hover {
 	font-size: .8em;
 	display: block;
 	color: rgb(76, 67, 65);
+	text-transform: lowercase;
 }
 
 a.gallery {
@@ -614,6 +706,8 @@ input[type="search"] {
 	color:rgb(76, 67, 65);
 	padding-left: 95px;
 	background: url(../_images/tweet_90.png) no-repeat;
+	line-height: 100px;
+	
 }
 
 #pageFooter form {
