@@ -172,7 +172,7 @@ body {
 }
 
 header {
-	
+	height:165px;
 }
 
 article {
@@ -188,6 +188,7 @@ aside {
 }
 
 #pageFooter {
+	height:150px;
 	clear:both;
 	overflow:hidden;
 }
@@ -200,6 +201,7 @@ header {
 	overflow: hidden;
 	margin-bottom: 1.5em;
 	padding-left: 50px;
+	background:rgb(100, 98, 102);
 }
 
 header h1 {
@@ -288,17 +290,22 @@ a.shop {
 }
 
 /*banner styles*/
+
 .banner {
+	background-image: url(../_images/gallery_banner.jpg);
+	background-repeat: no-repeat;
+	height:350px;
 	overflow: hidden;
 	margin-bottom: 4em;
 	position: relative;
+	padding-left:50px;
 }
-
 .banner h1 {
 	font-size: 2.2em;
 	color: #fff;
 	letter-spacing:.1em;
 	text-transform: uppercase;
+	padding-top:290px;
 }
 
 .banner p {
@@ -314,9 +321,9 @@ a.shop {
 }
 
 
-/*article styles*/
+
+
 article section {
-	border-bottom: 2px solid rgb(76, 67, 65);
 	margin-bottom: 2em;
 }
 
@@ -326,14 +333,14 @@ article h1, article h2, article h3 {
 
 article > h1 {
 	font-size: 1.8em;
-	border-bottom: 2px solid rgb(76, 67, 65);
+	
 	margin-bottom: 1.5em;
 	background: url(../_images/icon_sprites_50.png) no-repeat
 }
 
 article h2 {
 	font-size: 1.4em;
-	margin-top: 1.5em;
+	border-bottom: 2px solid rgb(76,67,65);
 }
 
 article h2 a {
@@ -349,7 +356,21 @@ article ul {
 	margin:0 0 1em 50px;
 }
 .news {
+	width:400px;
+	background: rgb(237, 228, 214);
 	float: left;
+	margin-right: 50px;
+	width:360px;
+	padding:20px;
+	border-radius: 15px 0 15px 0;
+	font-size:90%;
+}
+.news + .news {
+	margin-right:0;
+}
+
+.news h2 {
+	margin-top:0;
 }
 /*page-specific main content styles*/
 #home h1 {
@@ -670,6 +691,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 /*footer styles*/
 #pageFooter {
 	padding-top: 1.5em;
+	background: rgb(173, 169, 130);
 }
 
 input[type="search"] {
