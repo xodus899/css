@@ -8,14 +8,15 @@ attribution would be nice, but not required
 */
 
 /* desolve color palette
-#4C4341     rgb(76, 67, 65)  ASH
+#4C4341    	 rgb(76, 67, 65)  ASH
 #646266      rgb(100, 98, 102)  DULL GRAY
-#7B798F     rgb(123, 121, 143)  PEWTER BLUE
-#ADA982    rgb(173, 169, 130)  DARK TAN
-#D8D5BC   rgb(216, 213, 188)  MED TAN
-				      rgb(237, 228, 214)  LIGHT TAN
-				     rgb(102, 127, 106)  DARK GREEN
-					 rgb(219,126,64) BURNT ORANGE
+#7B798F      rgb(123, 121, 143)  PEWTER BLUE
+#ADA982    	 rgb(173, 169, 130)  DARK TAN
+#D8D5BC   	 rgb(216, 213, 188)  MED TAN
+#EDE4D6		 rgb(237, 228, 214)  LIGHT TAN
+#667f6a		 rgb(102, 127, 106)  DARK GREEN
+#db7e40		 rgb(219,126,64) BURNT ORANGE
+					 
 */
 /*LAB Objectives:
 
@@ -295,7 +296,7 @@ a.shop {
 	letter-spacing:.1em;
 	text-transform: uppercase;
 }
-
+ 
 .banner p {
 	width: 300px;
 	padding: 15px 15px 0;
@@ -305,6 +306,7 @@ a.shop {
 	position: absolute;
 	top: 0;
 	right: 0;
+	background-color:rgba(123, 121, 143,0.8);
 }
 
 
@@ -369,6 +371,7 @@ article ul {
 	background-position: right top;
 	padding: 20px 0 5px;
 	margin-top: 1em;
+	
 }
 #contact h1 {
 	background-position: right -395px;
@@ -434,6 +437,8 @@ article h2 a:hover {
 	margin: 0;
 	font-weight: normal;
 	font-style: normal;
+	color: rgba(255,255,255,0.6);
+	text-shadow:2px 2px 0 rgba(123, 121, 143,0.6);
 	
 }
 
